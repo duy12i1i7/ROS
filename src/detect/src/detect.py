@@ -38,7 +38,7 @@ def image_callback(ros_image, model):
 
 def main():
     rospy.init_node('detect', anonymous=True)
-    model_path = "./src/detect/model/yolov10x.pt"
+    model_path = "./src/detect/model/yolov10n.pt"
     try:
         model = YOLOv10(model_path)
     except Exception as e:
